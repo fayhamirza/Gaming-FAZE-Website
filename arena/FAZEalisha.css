@@ -1,0 +1,413 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Apr 8, 2025, 12:32:17 AM
+    Author     : Alisha Rizwan
+*/
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+@font-face
+{
+    font-family: TitleFont;
+    src: url(WideGamingFont.woff);
+}
+
+@font-face
+{
+    font-family: Title2Font;
+    src: url(FAZEFont.woff)
+}
+
+.title
+{
+    font-family: TitleFont;
+    color: plum;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+    z-index: 2;
+    position: relative;
+}
+
+.title2
+{
+    font-family: Title2Font;
+    text-align: center;
+    font-size: 125px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+    z-index: 2;
+    position: relative;
+    align-content: center;
+    
+}
+
+.F
+{
+    color: #FFFF99;
+   
+}
+
+.A
+{
+    color: lightskyblue;
+}
+
+.Z
+{
+    color: mediumaquamarine;
+}
+
+.E
+{
+    color: lightcoral;
+}
+
+
+body{
+   background: url('background.gif');
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.custom-navbar
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.15s ease-in-out;
+
+}
+
+.logo
+{
+    height: 100px;
+    width: auto;
+    left: 100%;
+}
+
+
+.custom-navbar ul
+{
+    list-style-type: none;
+
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    font-family: TitleFont;
+}
+
+.custom-navbar li
+{
+    margin: 15px;
+}
+
+.custom-navbar a
+{
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px;
+    display: inline-block;
+}
+
+.toggleicon:hover
+{
+    transform: scale(1.2); /* 10% bigger */
+    transition: transform 0.3s ease;
+}
+
+.custom-navbar a:hover {
+    background-color: palevioletred;
+
+}
+
+
+
+.container1
+{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.container2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    margin-bottom: -80px;
+     border-style: solid;
+     border-width:5pt;
+     border-color: #FF00FF;
+    background: url('discordBG.gif');
+}
+
+.text1
+{
+    font-family: TitleFont;
+    font-size: 9px;
+    line-height: 2;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+.discord
+{
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: -20px;
+    padding: 20px;
+}
+
+
+h2
+{
+    font-family: TitleFont;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+h3{
+   font-family: TitleFont;
+ 
+}
+
+.container4 
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.container5 h2
+{
+  text-align: left;
+  font-family: TitleFont;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: whitesmoke;
+}
+
+
+.container6 {
+    width:70%;
+    margin-left: 3%;
+}   
+
+.container7{
+    float: right;
+    margin-top: -5%;
+    margin-right: 20pt;
+}
+
+.container8{
+    float: left;
+    margin-top: 3%;
+    margin-left: 12%;
+}
+
+.container9{
+    float: right;
+    margin-top: 11%;
+    margin-right: 19pt;
+}
+
+.container10{
+    float: left;
+    margin-top: 6%;
+    margin-left: 4%;
+}
+
+.container11 h2
+{
+  text-align: left;
+  font-family: TitleFont;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: whitesmoke;
+}
+
+form {
+      background: plum;
+      padding: 20px;
+      width: 700px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      margin-top: 50px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 8px;
+    }
+
+    .error {
+      color: red;
+      font-size: 12px;
+      display: none;
+    }
+
+    .success {
+      color: green;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .formtitle{
+        font-size: 10pt;
+        text-align: center;
+    }
+.row{
+    width: 400pt;
+  
+    box-shadow: 0 0 7px 1px rgba(60, 60, 60, 0.4);
+    border-radius: 10px;
+    
+     background-color: plum;
+    cursor: pointer;
+    font-family: TitleFont;
+    font-size: 12px;
+    
+    border-width: 10pt;
+    border-right-color: thistle;
+    
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    gap: 1px;
+    
+    
+    justify-content: space-between;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.profileimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: none;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.content{
+    padding: 5%;
+    padding-left: 3%;
+    padding: 10px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.user-header
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.name{
+    font-weight: 700;
+}
+
+.time{
+    font-size:0.7em;
+    color: grey;
+}
+
+footer
+{
+    background-color: black;
+    font-family: TitleFont;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    color: khaki;
+    margin-top: 300px;
+}
+
+
+footer a
+{
+    color: palevioletred;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+.containerA .popup
+{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 350px;
+    height: 150px;
+    transform: translate(-50%, -30%);
+    padding: 20px;
+    background-color: #FFC5D3;
+    border-radius: 5px;
+    color: #790252;
+    border-color: #790252;
+    border-width: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: TitleFont;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center;     /* Horizontal centering */
+    text-align: center;
+}
+
+.containerA button
+{
+    padding: 5px 5px;
+    background-color: #FFC5D3;
+    border-radius: 5px;
+    color: #790252;
+    border-color: #790252;
+    border-width: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: TitleFont;
+    width: 100px;
+}

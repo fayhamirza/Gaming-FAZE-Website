@@ -1,0 +1,629 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 9 Apr 2025, 2:02:11 PM
+    Author     : fayha
+*/
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: url('background.gif');
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: TitleFont;
+    src: url(WideGamingFont.woff);
+}
+
+@font-face
+{
+    font-family: Title2Font;
+    src: url(FAZEFont.woff)
+}
+
+.title
+{
+    font-family: TitleFont;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+    z-index: 2;
+    position: relative;
+}
+
+.title2
+{
+    font-family: Title2Font;
+    text-align: center;
+    font-size: 125px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+    z-index: 2;
+    position: relative;
+    align-content: center;
+    
+}
+
+.F
+{
+    color: #FFFF99;
+}
+
+.A
+{
+    color: lightskyblue;
+}
+
+.Z
+{
+    color: mediumaquamarine;
+}
+
+.E
+{
+    color: lightcoral;
+}
+
+.custom-navbar
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.15s ease-in-out;
+
+}
+
+.logo
+{
+    height: 100px;
+    width: auto;
+    left: 100%;
+}
+
+
+.custom-navbar ul
+{
+    list-style-type: none;
+
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    font-family: TitleFont;
+}
+
+.custom-navbar li
+{
+    margin: 15px;
+}
+
+.custom-navbar a
+{
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px;
+    display: inline-block;
+}
+
+.toggleicon:hover
+{
+    transform: scale(1.2); /* 10% bigger */
+    transition: transform 0.3s ease;
+}
+
+.custom-navbar a:hover {
+    background-color: palevioletred;
+
+}
+
+.container1
+{
+    position: relative;
+    text-align: center;
+    padding: 40px;
+}
+
+.title3
+{
+    font-family: TitleFont;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    padding: 40px;
+}
+
+.container2
+{
+    position: relative;
+    text-align: center;
+    padding: 100px;
+}
+
+.blogs-container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    position: relative;
+}
+
+.user-card 
+{
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    gap: 15px;
+    background-color: whitesmoke;
+}
+
+.pfp 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: none;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.blog
+{
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.user-header
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+}
+        
+.blogger
+{                                          
+    font-size: 14px;
+    font-family: TitleFont;
+    text-align: left;
+}
+
+        
+ .level {                                           /*level box*/    
+    padding: 5px 5px;
+    background-color: #f1ce4b;
+    border-radius: 5px;
+    color: #97651b;
+    border-color: #97651b;
+    border-width: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: TitleFont;
+    width: 100px;
+}
+        
+.game-image
+{
+    width: 210px;
+    height: 290px;
+    border: 5px solid #97651b; 
+}
+
+.para
+{
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+}
+
+/*SECOND BLOG*/
+
+.blogs-container1 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    position: relative;
+}
+
+.user-card1 
+{
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    gap: 15px;
+    background-color: whitesmoke;
+}
+
+.pfp 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: none;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.blog
+{
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.user-header
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+}
+        
+.blogger
+{                                          
+    font-size: 14px;
+    font-family: TitleFont;
+    text-align: left;
+}
+
+        
+ .level1 {                                           /*level box*/    
+    padding: 5px 5px;
+    background-color: #B3EBF2;
+    border-radius: 5px;
+    color: #0A2647;
+    border-color: #0A2647;
+    border-width: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: TitleFont;
+    width: 100px;
+}
+        
+.game-image1
+{
+    width: 210px;
+    height: 290px;
+    border: 5px solid #0A2647; 
+}
+
+.para1
+{
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+}
+
+/*THIRD BLOG*/
+
+.blogs-container2 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    position: relative;
+}
+
+.user-card2 
+{
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    gap: 15px;
+    background-color: whitesmoke;
+}
+
+.pfp 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: none;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.blog
+{
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.user-header
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+}
+        
+.blogger
+{                                          
+    font-size: 14px;
+    font-family: TitleFont;
+    text-align: left;
+}
+
+        
+ .level2 {                                           /*level box*/    
+    padding: 5px 5px;
+    background-color: #BEE5B0;
+    border-radius: 5px;
+    color: #17B169;
+    border-color: #17B169;
+    border-width: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: TitleFont;
+    width: 100px;
+}
+        
+.game-image2
+{
+    width: 290px;
+    height: 290px;
+    border: 5px solid #17B169; 
+}
+
+.para2
+{
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+}
+
+/*FOURTH BLOG*/
+
+.blogs-container3 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    position: relative;
+}
+
+.user-card3 
+{
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    gap: 15px;
+    background-color: whitesmoke;
+}
+
+.pfp 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: none;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.blog
+{
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.user-header
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+}
+        
+.blogger
+{                                          
+    font-size: 14px;
+    font-family: TitleFont;
+    text-align: left;
+}
+
+        
+ .level3 {                                           /*level box*/    
+    padding: 5px 5px;
+    background-color: #FFC5D3;
+    border-radius: 5px;
+    color: #790252;
+    border-color: #790252;
+    border-width: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: TitleFont;
+    width: 100px;
+}
+        
+.game-image3
+{
+    width: 270px;
+    height: 190px;
+    border: 5px solid #790252; 
+}
+
+.para3
+{
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+}
+
+footer 
+{
+    background-color: black;
+    font-family: TitleFont;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    color: khaki;
+}
+footer a 
+{
+    color: palevioletred;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover 
+{
+    text-decoration: underline;
+} 
+
+footer p {
+    font-family: TitleFont;
+    font-size: 10px;
+}
+
+.subtitle
+{
+    font-family: TitleFont;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+footer a
+{
+    color: palevioletred;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+.containerA .popup
+{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 350px;
+    height: 150px;
+    transform: translate(-50%, -30%);
+    padding: 20px;
+    background-color: #FFC5D3;
+    border-radius: 5px;
+    color: #790252;
+    border-color: #790252;
+    border-width: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: TitleFont;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center;     /* Horizontal centering */
+    text-align: center;
+}
+
+.containerA button
+{
+    padding: 5px 5px;
+    background-color: #FFC5D3;
+    border-radius: 5px;
+    color: #790252;
+    border-color: #790252;
+    border-width: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: TitleFont;
+    width: 100px;
+}
+
+

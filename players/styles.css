@@ -1,0 +1,386 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 22 Mar 2025, 7:48:25 PM
+    Author     : apple
+*/
+/*/@font-face{
+    font-family: myFont;
+    src:url(block.ttf);}*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face{
+    font-family: myFontBody;                /*font styles 1*/
+    src:url(blockbody.otf);
+}
+
+@font-face
+{
+    font-family: Title2Font;                /*font styles 2*/
+    src: url(FAZEFont.woff)
+}
+
+@font-face
+{
+    font-family: TitleFont;                 /*font styles 3*/
+    src: url(WideGamingFont.woff);
+}
+
+.custom-navbar
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.15s ease-in-out;
+
+}
+
+.logo
+{
+    height: 100px;
+    width: auto;
+    left: 100%;
+}
+
+
+.custom-navbar ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    font-family: TitleFont;
+}
+
+.custom-navbar li
+{
+    margin: 15px;
+}
+
+.custom-navbar a
+{
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px;
+    display: inline-block;
+}
+
+.toggleicon:hover
+{
+    transform: scale(1.2); /* 10% bigger */
+    transition: transform 0.3s ease;
+}
+
+.custom-navbar a:hover {
+    background-color: palevioletred;
+
+}
+/*
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+.navbar {
+    background-color: #030517; 
+    display: flex;
+    justify-content: center; 
+    padding: 8px 0; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    border-bottom: 2px solid #888; 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px; 
+    font-size: 18px;
+    transition: 0.3s;
+    font-family: "Press Start 2P" ;
+    border-color: #97651b;
+}
+
+.navbar a:hover {
+    background-color: palevioletred;
+    
+}*/
+
+body  {                                          /*bg styling */
+    background-color: #030517;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    padding-top: 0px; /* already set well! */
+    background-image:url(background.gif);
+    /*background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    
+}
+
+.title {
+    font-family: "Press Start 2P", cursive !important;
+    font-size: 32px !important;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    color: whitesmoke;
+}
+ .players-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding: 0 !important;
+    margin: 0 auto !important;
+
+}
+
+.container, .container-fluid {
+    background-color: transparent !important;
+}
+
+.player-card {
+    display: none;  /* So Bootstrap's flex or grid doesn't auto-show */
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    background-color: gray;
+}
+
+.player-card:hover {
+    transform: scale(1.20);
+}
+
+.player-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 50px;
+    float: none;
+}
+
+.player-info {
+    flex-grow: 1;
+    position: relative;
+    padding: 10px;
+}
+
+.player-info h2 {
+    margin-right: 10px;
+    font-family: "Press Start 2P";
+    text-shadow: 4px 5px 0px #101010;
+    color: white;
+    text-align: center;
+}
+
+.player-info ul {
+    font-family: myFontBody;
+    padding-left: 200px;
+    text-align: left;
+    font-size: 125%;
+    list-style-type: none;
+    margin-top: 5px;
+}
+.player-info li {
+    background-image: url('heart.png'); 
+    background-size: 20px 20px; 
+    background-repeat: no-repeat;
+    background-position: 0px center; 
+    padding-left: 30px; 
+    margin-bottom: 5px;
+    color:white;
+        }
+.large{                                            /*Large Letter*/
+    font-size: 50px;
+}
+
+
+#player-F { background-color: #F4C430; }           /*Bg of card*/
+#player-A { background-color: #2C74B3; }
+#player-Z { background-color: #17B169; }
+#player-E { background-color: #E95793; }
+
+.custom-btn {
+    padding: 7px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    font-family: myFontBody;
+    background-color: inherit; /* so background works per card */
+}
+
+.custom-btn:hover {
+    background-color: #b8860b;
+}
+
+        
+ .level {                                           /*level box*/    
+    padding: 10px 10px;
+    background-color: #f1ce4b;
+    border-radius: 5px;
+    color: #97651b;
+    border-color: #97651b;
+    border-width: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: "Press Start 2P";
+}
+    
+.letters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.letters span {                                    /*F A Z E letters */
+    font-size: 100px;
+    margin: 10px;
+    cursor: pointer;
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Title2Font;
+    text-align: center;
+    font-size: 125px;
+    line-height: 1;
+    z-index: 2;
+    position: relative;
+    align-content: center;
+}
+
+.letters span:active {                          /*upon clicking the F A Z E*/
+    transform: scale(0.9);
+    background-color: #ff0000;
+    box-shadow: 0 0 15px #FD1C03;
+}
+
+.letters span:hover {
+    background-color: grey
+}
+
+#F:hover {background-color: #FFDB58;} /*#FDDD5C*/ /*#edca02*/
+#A:hover {background-color: #B3EBF2;}
+#Z:hover {background-color: #BEE5B0;}
+#E:hover {background-color: #FFC5D3;}
+
+#F
+{
+    color: #FFFF99;
+}
+
+#A
+{
+    color: lightskyblue;
+}
+
+#Z
+{
+    color: mediumaquamarine;
+}
+
+#E
+{
+    color: lightcoral;
+}
+
+footer
+{
+    background-color: black;
+    font-family: TitleFont;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    color: khaki;
+}
+footer a
+{
+    color: palevioletred;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+.containerA .popup
+{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 350px;
+    height: 150px;
+    transform: translate(-50%, -30%);
+    padding: 20px;
+    background-color: #FFC5D3;
+    border-radius: 5px;
+    color: #790252;
+    border-color: #790252;
+    border-width: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: TitleFont;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center;     /* Horizontal centering */
+    text-align: center;
+}
+
+.containerA button
+{
+    padding: 5px 5px;
+    background-color: #FFC5D3;
+    border-radius: 5px;
+    color: #790252;
+    border-color: #790252;
+    border-width: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: TitleFont;
+    width: 100px;
+}

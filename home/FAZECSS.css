@@ -1,0 +1,605 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 23 Mar 2025, 8:59:06 PM
+    Author     : fayha
+*/
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: url('background.gif');
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: TitleFont;
+    src: url(WideGamingFont.woff);
+}
+
+@font-face
+{
+    font-family: Title2Font;
+    src: url(FAZEFont.woff)
+}
+
+.title
+{
+    font-family: TitleFont;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+    z-index: 2;
+    position: relative;
+}
+
+.title2
+{
+    font-family: Title2Font;
+    text-align: center;
+    font-size: 125px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+    z-index: 2;
+    position: relative;
+    align-content: center;
+
+}
+
+.F
+{
+    color: #FFFF99;
+}
+
+.A
+{
+    color: lightskyblue;
+}
+
+.Z
+{
+    color: mediumaquamarine;
+}
+
+.E
+{
+    color: lightcoral;
+}
+
+.custom-navbar
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.15s ease-in-out;
+
+}
+
+.logo
+{
+    height: 100px;
+    width: auto;
+    left: 100%;
+}
+
+
+.custom-navbar ul
+{
+    list-style-type: none;
+
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    font-family: TitleFont;
+}
+
+.custom-navbar li
+{
+    margin: 15px;
+}
+
+.custom-navbar a
+{
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 15px;
+    display: inline-block;
+}
+
+.toggleicon:hover
+{
+    transform: scale(1.2); /* 10% bigger */
+    transition: transform 0.3s ease;
+}
+
+.custom-navbar a:hover {
+    background-color: palevioletred;
+
+}
+
+.container1
+{
+    position: relative;
+    text-align: center;
+    padding: 100px;
+}
+
+.ci
+{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 100%;
+    margin-bottom: 100px;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 1) 75%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 75%, transparent);
+}
+
+.container2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    margin-bottom: -80px;
+}
+
+.text1
+{
+    font-family: TitleFont;
+    color: white;
+    font-size: 10px;
+    line-height: 2;
+    background-color: black;
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.fight
+{
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+.container3
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 5px;
+}
+
+.text2
+{
+    font-family: TitleFont;
+    color: white;
+    font-size: 10px;
+    line-height: 2;
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+    position: relative;
+}
+
+
+.fight2
+{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+h2
+{
+    font-family: TitleFont;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+.games-container
+{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.container4
+{
+    padding: 20px;
+    border-left: 6px solid khaki;
+}
+
+.container4 h2
+{
+    font-family: TitleFont;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+.games-card
+{
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+    color: white;
+}
+
+.game-card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s cubic-bezier(0.68, 0.55, 0.27, 1.55);
+}
+
+.games-card img
+{
+    width: 50%;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.game-title
+{
+    font-family: TitleFont;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: khaki;
+}
+
+.platform
+{
+    font-family: TitleFont;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+.container5
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seemore
+{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: khaki;
+    cursor: pointer;
+    font-family: TitleFont;
+    font-size: 12px;
+    color: darkgoldenrod;
+}
+
+.seemore:hover
+{
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;  /* Dark background */
+    border-radius: 5px;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: /*linear-gradient(45deg, #6a11cb, #2575fc);*/ black;
+    border-radius: 5px;
+}
+
+/* Hover effect on the handle */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.container6
+{
+    padding: 20px;
+    border-right: 6px solid pink;
+}
+
+.container6 h2
+{
+    font-family: TitleFont;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+.container7
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.merch-container
+{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.merch-title
+{
+    font-family: TitleFont;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: pink;
+}
+
+.price
+{
+    font-family: TitleFont;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+.container7
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seemore2
+{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: pink;
+    font-family: TitleFont;
+    font-size: 12px;
+    color: indianred;
+}
+
+.seemore2:hover
+{
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8);
+}
+
+.news-container
+{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.container10
+{
+    padding: 20px;
+    border-left: 6px solid mediumslateblue;
+}
+
+.container10 h2
+{
+    font-family: TitleFont;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+.news-card
+{
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+    color: white;
+}
+
+.news-card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s cubic-bezier(0.68, 0.55, 0.27, 1.55);
+}
+
+.news-card img
+{
+    width: 50%;
+    border-radius: 8px;
+    padding: 10px;
+    float: center;
+}
+
+.news-title
+{
+    font-family: TitleFont;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: mediumslateblue;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;  /* Dark background */
+    border-radius: 5px;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: /linear-gradient(45deg, #6a11cb, #2575fc);
+    / black;
+    border-radius: 5px;
+}
+
+/* Hover effect on the handle */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.link
+{
+    font-family: TitleFont;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+.container11
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seemore3
+{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: mediumslateblue;
+    cursor: pointer;
+    font-family: TitleFont;
+    font-size: 12px;
+    color: navy;
+}
+
+.seemore3:hover
+{
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8);
+}
+
+footer
+{
+    background-color: black;
+    font-family: TitleFont;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    color: khaki;
+}
+
+.container8
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    margin-bottom: -80px;
+}
+
+.amyrose
+{
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+footer a
+{
+    color: palevioletred;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+.containerA .popup
+{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 350px;
+    height: 150px;
+    transform: translate(-50%, -30%);
+    padding: 20px;
+    background-color: #FFC5D3;
+    border-radius: 5px;
+    color: #790252;
+    border-color: #790252;
+    border-width: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: TitleFont;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center;     /* Horizontal centering */
+    text-align: center;
+}
+
+.containerA button
+{
+    padding: 5px 5px;
+    background-color: #FFC5D3;
+    border-radius: 5px;
+    color: #790252;
+    border-color: #790252;
+    border-width: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: TitleFont;
+    width: 100px;
+}
+

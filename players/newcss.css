@@ -1,0 +1,121 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 13 Apr 2025, 5:21:42 PM
+    Author     : apple
+*/
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+.title {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* Letter buttons */
+.letters {
+    margin-top: 20px;
+}
+
+.letters span {
+    cursor: pointer;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #444;
+    color: white;
+    display: inline-block;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.letters span:hover {
+    background-color: #666;
+}
+
+/* Player section */
+.players-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.player-card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 700px;
+    background-color: #111;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 0 10px #000;
+}
+
+.player-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.btn,
+.level {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    padding: 8px 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Player info */
+.player-info ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.player-info li {
+    margin-bottom: 8px;
+}
+
+.large {
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    padding: 40px 20px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

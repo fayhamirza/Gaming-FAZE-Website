@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title> FAZE Merch</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Bundle JS (for toggling) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <link rel="stylesheet" href="term project.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+     
+<script>
+     
+let wishlist = [];
+let cart = [];
+
+function createModal(title, items) {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    const content = document.createElement('div');
+    content.classList.add('modal-content');
+
+    const heading = document.createElement('h2');
+    heading.innerText = title;
+    content.appendChild(heading);
+
+    const itemsContainer = document.createElement('div');
+    itemsContainer.classList.add('modal-items');
+
+    items.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.classList.add('modal-img');
+        itemsContainer.appendChild(img);
+    });
+
+    const closeBtn = document.createElement('button');
+    closeBtn.innerText = 'Close';
+    closeBtn.classList.add('close-btn');
+    closeBtn.onclick = () => document.body.removeChild(modal);
+
+    content.appendChild(itemsContainer);
+    content.appendChild(closeBtn);
+    modal.appendChild(content);
+    document.body.appendChild(modal);
+}
+
+function setupButtons() {
+    const items = document.querySelectorAll('.item');
+
+    items.forEach(item => {
+        const imgSrc = item.querySelector('img').src;
+        const buttons = item.querySelectorAll('.heart-item img');
+
+        buttons[0].addEventListener('click', () => {
+            wishlist.push(imgSrc);
+        });
+
+        buttons[1].addEventListener('click', () => {
+            cart.push(imgSrc);
+        });
+    });
+
+    document.querySelector('.header-buttons img[alt="Wish List Icon"]').addEventListener('click', () => {
+        createModal('Wishlist', wishlist);
+    });
+
+    document.querySelector('.header-buttons img[alt="Cart Icon"]').addEventListener('click', () => {
+        createModal('Cart', cart);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', setupButtons);
+
+ </script>
+
+ 
+    </head>
+    
+    <body>
+        <nav class="navbar custom-navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="#">
+                    <img src="logo.png" alt="logo" class="logo">
+                </a>
+
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="toggleicon"src="toggleicon.png" alt="Toggle" style="width: 40px; height: 40px;">
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li><a href="../home/index.html" target="_blank">Home</a></li>
+                        <li><a href="../blog/index.html" target="_blank">Blogs</a></li>
+                        <li><a href="../arena/index.html" target="_blank">Arena</a></li>
+                        <li><a href="../merch/index.html" target="_blank">Merch</a></li>
+                        <li><a href="../players/index.html" target="_blank">Players</a></li>
+                    </ul>
+                </div>
+
+                <!-- Logo (desktop only) -->
+                <a class="navbar-brand d-none d-lg-block" href="#">
+                    <img src="logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+        </nav>
+        <div class="container1">
+            
+            
+            <div>
+                <span class ="title2"> <span class="F">F</span> 
+                    <span class="A">A</span> 
+                    <span class="Z">Z</span> 
+                    <span class="E">E</span> </span> 
+                <h1 class ="title"> S  H  O  P </h1>
+                <br><br><br><br>
+            </div>
+        </div>
+        
+        
+       <h1>Choose Your Merch!
+       <div class="header-buttons">
+        <img src="wish.jpg" alt="Wish List Icon" class="adjustable-image"> 
+        <img src="cart.jpg" alt="Cart Icon" class="adjustable-image">
+    </div>
+       
+       </h1>
+       <div class="container"> 
+            <div class="item">
+                <img src="spider.jpg" alt="Spiderman Hoodie">
+                <br> 
+                <p>Spider-man Hoodie - $40</p>
+                <div class="buttons">
+                    <div class="heart-item">
+                        <img src="wish.jpg" alt="Add to Wish List" class="small-button">
+                        <p>Add to Wish </p>
+                    </div>
+                    <div class="heart-item">
+                        <img src="cart.jpg" alt="Add to Cart" class="small-button">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="item">
+                <img src="pacshirt.jpg" alt="Pacman T-shirt">
+                <br>
+                <p>Pac-man T-shirt - $30</p>
+                <div class="buttons">
+                    <div class="heart-item">
+                        <img src="wish.jpg" alt="Add to Wish List" class="small-button">
+                        <p>Add to Wish </p>
+                    </div>
+                    <div class="heart-item">
+                        <img src="cart.jpg" alt="Add to Cart" class="small-button">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="item">
+                <img src="hellokitty.jpg" alt="Hello Kitty Sweatshirt">
+                <br>
+                <p>Hello Kitty Jacket - $50</p>
+                <div class="buttons">
+                    <div class="heart-item">
+                        <img src="wish.jpg" alt="Add to Wish List" class="small-button">
+                        <p>Add to Wish </p>
+                    </div>
+                    <div class="heart-item">
+                        <img src="cart.jpg" alt="Add to Cart" class="small-button">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="item">
+               <img src="mario.jpg" alt="Mario  Fabric Patches">
+               <br>
+                <p>Mario Fabric Patches - $3</p>
+                <div class="buttons">
+                    <div class="heart-item">
+                        <img src="wish.jpg" alt="Add to Wish List" class="small-button">
+                        <p>Add to Wish </p>
+                    </div>
+                    <div class="heart-item">
+                        <img src="cart.jpg" alt="Add to Cart" class="small-button">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="item">
+                <img src="spidi.jpg" alt="Doctor Strange">
+                <br>
+                <p>Spiderman Funko-pop! - $70</p>
+                <div class="buttons">
+                    <div class="heart-item">
+                        <img src="wish.jpg" alt="Add to Wish List" class="small-button">
+                        <p>Add to Wish </p>
+                    </div>
+                    <div class="heart-item">
+                        <img src="cart.jpg" alt="Add to Cart" class="small-button">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="item">
+               <img src="ironfig.jpg" alt="Iron man">
+               <br>
+                <p>Iron Man Funko-pop! - $70</p>
+                <div class="buttons">
+                    <div class="heart-item">
+                        <img src="wish.jpg" alt="Add to Wish List" class="small-button">
+                        <p>Add to Wish </p>
+                    </div>
+                    <div class="heart-item">
+                        <img src="cart.jpg" alt="Add to Cart" class="small-button">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+             <div class="item">
+                <img src="cod.jpg" alt=" call of duty">
+                <br>
+                <p>Call Of Duty Mug - $20</p>
+                <div class="buttons">
+                    <div class="heart-item">
+                        <img src="wish.jpg" alt="Add to Wish List" class="small-button">
+                        <p>Add to Wish </p>
+                    </div>
+                    <div class="heart-item">
+                        <img src="cart.jpg" alt="Add to Cart" class="small-button">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+             <div class="item">
+                <img src="pacman.jpg" alt=" keychain">
+                <br>
+                <p>Pac-man Keychain - $5</p>
+                <div class="buttons">
+                    <div class="heart-item">
+                        <img src="wish.jpg" alt="Add to Wish List" class="small-button">
+                        <p>Add to Wish </p>
+                    </div>
+                    <div class="heart-item">
+                        <img src="cart.jpg" alt="Add to Cart" class="small-button">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <br><br><br><br>
+       <footer>
+            <p style="color: white;">2025 Gaming FAZE All rights reserved.</p> <br> <br>
+            <p>
+                Thank you for visiting our website!
+                <br><br>
+                <span style="color: palevioletred;">Please come again!</span>
+            </p>
+            <br> <br>
+            <p>Contact Us</p>
+            <table class="contacttable" style="margin: 0 auto;">
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="phone2.jpeg" id="phoneBtn" alt="phone" style="cursor: pointer; display: block; margin: 0 auto; width: 40px; height:40px;">
+                    </td>
+                    <td style="text-align: center;">
+                        <img src="mail.jpeg" id="mailBtn" alt="mail" style="cursor: pointer; display: block; margin: 0 auto; width: 40px; height:40px;">
+                    </td>
+                    <td style="text-align: center;">
+                        <img src="chat.jpeg" id="chatBtn" alt="chat" style="cursor: pointer; display: block; margin: 0 auto; width: 40px; height:40px;">
+                    </td>
+                </tr>
+            </table>
+            <br> <br> <br>
+
+            <div class ="containerA">
+                <div id="popupPhone" class="popup">
+                    <p>Phone Number: 054 466 0470</p>
+                    <br> <br>
+                    <button class="closebutton" onclick="closePopup()">Close</button>
+                </div>
+
+                <div id="popupMail" class="popup">
+                    <p>G-Mail: gamingFAZE@gmail.com</p>
+                    <br> <br>
+                    <button  class="closebutton" onclick="closePopup()">Close</button>
+                </div>
+
+                <div id="popupChat" class="popup">
+                    <p>WhatsApp Number: 056 347 890</p>
+                    <br> <br>
+                    <button class="closebutton" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+            <script>
+            const phoneBtn = document.getElementById("phoneBtn");
+                const mailBtn = document.getElementById("mailBtn");
+                const chatBtn = document.getElementById("chatBtn");
+
+                const popupPhone = document.getElementById("popupPhone");
+                const popupMail = document.getElementById("popupMail");
+                const popupChat = document.getElementById("popupChat");
+
+                function closePopup()
+                {
+                    popupPhone.style.display = "none";
+                    popupMail.style.display = "none";
+                    popupChat.style.display = "none";
+                }
+
+                phoneBtn.onclick =
+                        function ()
+                        {
+                            closePopup();
+                            popupPhone.style.display = "block";
+                        };
+
+                mailBtn.onclick =
+                        function ()
+                        {
+                            closePopup();
+                            popupMail.style.display = "block";
+                        };
+
+                chatBtn.onclick = function ()
+                {
+                    closePopup();
+                    popupChat.style.display = "block";
+                };
+            </script>
+            </footer>
+    </body>
+</html>
+
